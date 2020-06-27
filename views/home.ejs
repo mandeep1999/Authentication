@@ -1,0 +1,12 @@
+<head>
+
+    <title>18BIT0486</title>
+</head>
+<h1>You are at the home page!</h1>
+<%if(!currentUser){%>
+<li><a href="/register">Sign Up</a></li>
+<li><a href="/login">Login</a></li>
+<%} else{%>
+<li><a href="/logout">Log out</a></li>
+<%}%>
+

@@ -1,0 +1,16 @@
+<head>
+    <title></title>
+</head>
+<h3>SignUp Form</h3>
+<form action="/register" method="POST">
+    <input type="text" name="username" placeholder="username">
+    <input type="password" name="password" placeholder="password">
+    <button>Submit</button>
+</form>
+
+
+<%if(!currentUser){%>
+    <li><a href="/login">Login</a></li>
+    <%} else{%>
+    <li><a href="/logout">Log out</a></li>
+    <%}%>
